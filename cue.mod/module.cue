@@ -1,1 +1,1 @@
-module: "github.com/loewenstein/cue-kubernetes"
+module: "company.com/config"

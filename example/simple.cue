@@ -1,18 +1,11 @@
 package example
 
 import (
-    appsv1 "k8s.io/api/apps/v1"
-    corev1 "k8s.io/api/core/v1"
-
-    
+	"company.com/k8s"
 )
 
-objectsByKindAndName: "Service": "my-service": corev1.#Service
-objectsByKindAndName: "Service": "my-service": metadata: {
-  name: "my-service"
-}
+// Template this package from our core company k8s config
+k8s.config
 
-objectsByKindAndName: "Deployment": "my-deployment": appsv1.#Deployment
-objectsByKindAndName: "Deployment": "my-deployment": metadata: {
-  name: "my-deployment"
-}
+service: "my-service": {}
+deployment: "my-deployment": {}
